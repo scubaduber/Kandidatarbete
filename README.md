@@ -3,7 +3,7 @@
 This project focuses on generating synthetic crash data and transforming it into FHIR-compatible resources for interoperability.
 
 ## Features
-- Synthetic dataset generation using Gaussian Copula
+- Synthetic dataset generation using Gaussian Copula, CTGANSynthesizer, CTGAN, TVAE
 - Data cleaning and preprocessing
 - FHIR Bundle transformation (Patient, Encounter, Observation)
 - Integration-ready for Virtuality pipeline
