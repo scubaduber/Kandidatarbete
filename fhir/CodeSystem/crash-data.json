@@ -1,0 +1,206 @@
+{
+  "resourceType": "CodeSystem",
+  "url": "https://scubaduber.github.io/Kandidatarbete/fhir/CodeSystem/crash-data",
+  "status": "active",
+  "content": "complete",
+  "name": "CrashDataCodeSystem",
+  "title": "Crash Data Code System",
+  "description": "Custom code system for synthetic prehospital crash and traffic incident data",
+  "caseSensitive": false,
+  "concept": [
+
+    {
+      "code": "dvtotal",
+      "display": "Delta-V total"
+    },
+    {
+      "code": "speed-limit",
+      "display": "Speed limit"
+    },
+
+    {
+      "code": "weather",
+      "display": "Weather"
+    },
+    {
+      "code": "clear",
+      "display": "Clear"
+    },
+    {
+      "code": "rain",
+      "display": "Rain"
+    },
+    {
+      "code": "snow",
+      "display": "Snow"
+    },
+    {
+      "code": "cloudy",
+      "display": "Cloudy"
+    },
+    {
+      "code": "sleet-hail",
+      "display": "Sleet or hail"
+    },
+    {
+      "code": "smoke-fog",
+      "display": "Smoke or fog"
+    },
+    {
+      "code": "strong-crosswind",
+      "display": "Strong crosswind"
+    },
+    {
+      "code": "blowing-snow",
+      "display": "Blowing snow"
+    },
+    {
+      "code": "freezing-rain",
+      "display": "Freezing rain"
+    },
+    {
+      "code": "missing",
+      "display": "Missing"
+    },
+
+    {
+      "code": "surface-condition",
+      "display": "Surface condition"
+    },
+    {
+      "code": "dry",
+      "display": "Dry"
+    },
+    {
+      "code": "wet",
+      "display": "Wet"
+    },
+    {
+      "code": "slush",
+      "display": "Slush"
+    },
+    {
+      "code": "ice-frost",
+      "display": "Ice or frost"
+    },
+    {
+      "code": "water",
+      "display": "Water"
+    },
+    {
+      "code": "gravel-dirt",
+      "display": "Gravel or dirt"
+    },
+
+    {
+      "code": "rollover",
+      "display": "Rollover"
+    },
+    {
+      "code": "no-rollover",
+      "display": "No rollover"
+    },
+    {
+      "code": "unknown",
+      "display": "Unknown"
+    },
+
+    {
+      "code": "body-type",
+      "display": "Body type"
+    },
+    {
+      "code": "passenger-car",
+      "display": "Passenger car"
+    },
+    {
+      "code": "suv",
+      "display": "SUV"
+    },
+    {
+      "code": "pickup-light-truck",
+      "display": "Pickup or light truck"
+    },
+    {
+      "code": "van-minivan",
+      "display": "Van or minivan"
+    },
+
+    {
+      "code": "fuel-type",
+      "display": "Fuel type"
+    },
+    {
+      "code": "gasoline",
+      "display": "Gasoline"
+    },
+    {
+      "code": "gasoline-ethanol",
+      "display": "Gasoline/Ethanol"
+    },
+    {
+      "code": "diesel",
+      "display": "Diesel"
+    },
+    {
+      "code": "electric",
+      "display": "Electric"
+    },
+
+    {
+      "code": "airbag-deployed",
+      "display": "Airbag deployed"
+    },
+    {
+      "code": "deployed",
+      "display": "Deployed"
+    },
+    {
+      "code": "not-deployed",
+      "display": "Not deployed"
+    },
+
+    {
+      "code": "fire",
+      "display": "Fire"
+    },
+    {
+      "code": "no-fire",
+      "display": "No fire"
+    },
+
+    {
+      "code": "general-area-of-damage",
+      "display": "General area of damage"
+    },
+    {
+      "code": "front",
+      "display": "Front"
+    },
+    {
+      "code": "rear",
+      "display": "Rear"
+    },
+    {
+      "code": "left-side",
+      "display": "Left side"
+    },
+    {
+      "code": "right-side",
+      "display": "Right side"
+    },
+    {
+      "code": "top",
+      "display": "Top"
+    },
+    {
+      "code": "undercarriage",
+      "display": "Undercarriage"
+    },
+    {
+      "code": "noncollision",
+      "display": "Non-collision"
+    }
+
+  ]
+}
