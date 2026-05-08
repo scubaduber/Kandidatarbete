@@ -30,7 +30,7 @@ Följande modeller har implementerats och utvärderats:
 | `CTGANMETA (1).ipynb` | Senaste rensade implementationen av CTGAN via SDV:s CTGANSynthesizer. |
 | `Copy_of_GAUSSIANCOPULA (11)_clean.ipynb` | Senaste rensade implementationen av GaussianCopulaSynthesizer. |
 | `TVAE (1)_clean.ipynb` | Senaste rensade implementationen av TVAESynthesizer. |
-| `virtualityvalidator.ipynb` | Notebook för att skapa Virtuality-kompatibla FHIR-Bundles. |
+| `virtualityvalidator` | Notebook för att skapa Virtuality-kompatibla FHIR-Bundles. |
 | `manifest.json` | Manifestfil som listar genererade olycksvisa FHIR-Bundles, inklusive filnamn, olycks-ID, antal entries och filstorlek. |
 | `synthetic_crash_accident_0.json` | Exempel på en syntetisk olycka representerad som en separat FHIR Bundle. |
 
