@@ -1,0 +1,454 @@
+{
+  "resourceType": "Bundle",
+  "id": "synthetic-crash-accident-0",
+  "type": "collection",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:patient-0",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-0",
+        "identifier": [
+          {
+            "system": "urn:synthetic-crash-data:patient-id-system",
+            "value": "patient-0"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:encounter-0",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-0",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB",
+          "display": "ambulatory"
+        },
+        "subject": {
+          "reference": "urn:uuid:patient-0"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:dvtotal-0",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "dvtotal-0",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "https://github.com/scubaduber/Kandidatarbete/blob/main/fhir/CodeSystem/crash-data.json",
+              "code": "dvtotal",
+              "display": "Delta-V total"
+            }
+          ],
+          "text": "Delta-V total"
+        },
+        "subject": {
+          "reference": "urn:uuid:patient-0"
+        },
+        "encounter": {
+          "reference": "urn:uuid:encounter-0"
+        },
+        "valueQuantity": {
+          "value": 60.0,
+          "unit": "km/h",
+          "system": "http://unitsofmeasure.org",
+          "code": "km/h"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:speedlimit-0",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "speedlimit-0",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "https://github.com/scubaduber/Kandidatarbete/blob/main/fhir/CodeSystem/crash-data.json",
+              "code": "speed-limit",
+              "display": "Speed limit"
+            }
+          ],
+          "text": "Speed limit"
+        },
+        "subject": {
+          "reference": "urn:uuid:patient-0"
+        },
+        "encounter": {
+          "reference": "urn:uuid:encounter-0"
+        },
+        "valueQuantity": {
+          "value": 40.0,
+          "unit": "mph",
+          "system": "http://unitsofmeasure.org",
+          "code": "[mi_i]/h"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:weather-0",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "weather-0",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "https://github.com/scubaduber/Kandidatarbete/blob/main/fhir/CodeSystem/crash-data.json",
+              "code": "weather",
+              "display": "Weather"
+            }
+          ],
+          "text": "Weather"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "https://github.com/scubaduber/Kandidatarbete/blob/main/fhir/CodeSystem/crash-data.json",
+              "code": "rain",
+              "display": "rain"
+            }
+          ],
+          "text": "rain"
+        },
+        "subject": {
+          "reference": "urn:uuid:patient-0"
+        },
+        "encounter": {
+          "reference": "urn:uuid:encounter-0"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:rollover-0",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "rollover-0",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "https://github.com/scubaduber/Kandidatarbete/blob/main/fhir/CodeSystem/crash-data.json",
+              "code": "rollover",
+              "display": "Rollover"
+            }
+          ],
+          "text": "Rollover"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "https://github.com/scubaduber/Kandidatarbete/blob/main/fhir/CodeSystem/crash-data.json",
+              "code": "unknown",
+              "display": "unknown"
+            }
+          ],
+          "text": "unknown"
+        },
+        "subject": {
+          "reference": "urn:uuid:patient-0"
+        },
+        "encounter": {
+          "reference": "urn:uuid:encounter-0"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:surfcond-0",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "surfcond-0",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "https://github.com/scubaduber/Kandidatarbete/blob/main/fhir/CodeSystem/crash-data.json",
+              "code": "surface-condition",
+              "display": "Surface condition"
+            }
+          ],
+          "text": "Surface condition"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "https://github.com/scubaduber/Kandidatarbete/blob/main/fhir/CodeSystem/crash-data.json",
+              "code": "dry",
+              "display": "dry"
+            }
+          ],
+          "text": "dry"
+        },
+        "subject": {
+          "reference": "urn:uuid:patient-0"
+        },
+        "encounter": {
+          "reference": "urn:uuid:encounter-0"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:bodytype-0",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "bodytype-0",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "https://github.com/scubaduber/Kandidatarbete/blob/main/fhir/CodeSystem/crash-data.json",
+              "code": "body-type",
+              "display": "Body type"
+            }
+          ],
+          "text": "Body type"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "https://github.com/scubaduber/Kandidatarbete/blob/main/fhir/CodeSystem/crash-data.json",
+              "code": "suv",
+              "display": "SUV"
+            }
+          ],
+          "text": "SUV"
+        },
+        "subject": {
+          "reference": "urn:uuid:patient-0"
+        },
+        "encounter": {
+          "reference": "urn:uuid:encounter-0"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:airbag-0",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "airbag-0",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "https://github.com/scubaduber/Kandidatarbete/blob/main/fhir/CodeSystem/crash-data.json",
+              "code": "airbag-deployed",
+              "display": "Airbag deployed"
+            }
+          ],
+          "text": "Airbag deployed"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "https://github.com/scubaduber/Kandidatarbete/blob/main/fhir/CodeSystem/crash-data.json",
+              "code": "not-deployed-not-available",
+              "display": "Not deployed/not available"
+            }
+          ],
+          "text": "Not deployed/not available"
+        },
+        "subject": {
+          "reference": "urn:uuid:patient-0"
+        },
+        "encounter": {
+          "reference": "urn:uuid:encounter-0"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:fire-0",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "fire-0",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "https://github.com/scubaduber/Kandidatarbete/blob/main/fhir/CodeSystem/crash-data.json",
+              "code": "fire",
+              "display": "Fire"
+            }
+          ],
+          "text": "Fire"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "https://github.com/scubaduber/Kandidatarbete/blob/main/fhir/CodeSystem/crash-data.json",
+              "code": "missing",
+              "display": "missing"
+            }
+          ],
+          "text": "missing"
+        },
+        "subject": {
+          "reference": "urn:uuid:patient-0"
+        },
+        "encounter": {
+          "reference": "urn:uuid:encounter-0"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:fueltype-0",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "fueltype-0",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "https://github.com/scubaduber/Kandidatarbete/blob/main/fhir/CodeSystem/crash-data.json",
+              "code": "fuel-type",
+              "display": "Fuel type"
+            }
+          ],
+          "text": "Fuel type"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "https://github.com/scubaduber/Kandidatarbete/blob/main/fhir/CodeSystem/crash-data.json",
+              "code": "gasoline",
+              "display": "gasoline"
+            }
+          ],
+          "text": "gasoline"
+        },
+        "subject": {
+          "reference": "urn:uuid:patient-0"
+        },
+        "encounter": {
+          "reference": "urn:uuid:encounter-0"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:gad1-0",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "gad1-0",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "https://github.com/scubaduber/Kandidatarbete/blob/main/fhir/CodeSystem/crash-data.json",
+              "code": "general-area-of-damage",
+              "display": "General area of damage"
+            }
+          ],
+          "text": "General area of damage"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "https://github.com/scubaduber/Kandidatarbete/blob/main/fhir/CodeSystem/crash-data.json",
+              "code": "left-side",
+              "display": "Left Side"
+            }
+          ],
+          "text": "Left Side"
+        },
+        "subject": {
+          "reference": "urn:uuid:patient-0"
+        },
+        "encounter": {
+          "reference": "urn:uuid:encounter-0"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:passengers-0",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "passengers-0",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "https://github.com/scubaduber/Kandidatarbete/blob/main/fhir/CodeSystem/crash-data.json",
+              "code": "passengers",
+              "display": "Passengers"
+            }
+          ],
+          "text": "Passengers"
+        },
+        "subject": {
+          "reference": "urn:uuid:patient-0"
+        },
+        "encounter": {
+          "reference": "urn:uuid:encounter-0"
+        },
+        "valueInteger": 2
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:belted-passengers-0",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "belted-passengers-0",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "https://github.com/scubaduber/Kandidatarbete/blob/main/fhir/CodeSystem/crash-data.json",
+              "code": "belted-passengers",
+              "display": "Belted passengers"
+            }
+          ],
+          "text": "Belted passengers"
+        },
+        "subject": {
+          "reference": "urn:uuid:patient-0"
+        },
+        "encounter": {
+          "reference": "urn:uuid:encounter-0"
+        },
+        "valueInteger": 2
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:provenance-0",
+      "resource": {
+        "resourceType": "Provenance",
+        "id": "provenance-0",
+        "target": [
+          {
+            "reference": "urn:uuid:patient-0"
+          },
+          {
+            "reference": "urn:uuid:encounter-0"
+          }
+        ],
+        "recorded": "2026-04-21T10:00:00Z",
+        "agent": [
+          {
+            "type": {
+              "text": "author"
+            },
+            "who": {
+              "display": "Synthetic crash data generation pipeline"
+            }
+          }
+        ],
+        "activity": {
+          "coding": [
+            {
+              "system": "https://github.com/scubaduber/Kandidatarbete/blob/main/fhir/CodeSystem/crash-data.json",
+              "code": "synthetic-data-generation",
+              "display": "Synthetic data generation"
+            }
+          ],
+          "text": "Synthetic data generation"
+        }
+      }
+    }
+  ]
+}
