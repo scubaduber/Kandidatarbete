@@ -33,7 +33,6 @@ Följande modeller har implementerats och utvärderats:
 | `virtualityvalidator.ipynb` | Notebook för att skapa Virtuality-kompatibla FHIR-Bundles. |
 | `manifest.json` | Manifestfil som listar genererade olycksvisa FHIR-Bundles, inklusive filnamn, olycks-ID, antal entries och filstorlek. |
 | `synthetic_crash_accident_0.json` | Exempel på en syntetisk olycka representerad som en separat FHIR Bundle. |
-| `crash-data.json` | Projektspecifikt CodeSystem för olycksrelaterade variabler där entydiga standardkoder saknas. |
 
 ## FHIR-struktur
 
@@ -46,7 +45,7 @@ Varje olycks-Bundle innehåller resurser såsom:
 - `Observation`
 - `Provenance`
 
-De kvantitativa observationerna har kompletterats med UCUM-kompatibla enheter där det är tillämpligt. För olycksspecifika variabler används ett projektspecifikt CodeSystem, eftersom flera av variablerna inte har entydiga motsvarigheter i exempelvis LOINC eller SNOMED CT.
+De kvantitativa observationerna har kompletterats med UCUM-kompatibla enheter där det är tillämpligt. För olycksspecifika variabler används projektspecifika kodsystemreferenser direkt i FHIR-resurserna, eftersom flera av variablerna inte har entydiga motsvarigheter i exempelvis LOINC eller SNOMED CT.
 
 ## Virtuality-validering
 
